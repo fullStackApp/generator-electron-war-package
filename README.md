@@ -5,9 +5,8 @@
 
 ## generator-electron-war-package [![Build Status](https://travis-ci.com/fullStackApp/generator-electron-war-package.svg)](https://travis-ci.com/fullStackApp/generator-electron-war-package)
 
-A yeoman generator to run spring boot war app in electron package mapping the [generator-jhipster-electron](https://github.com/amanganiello90/generator-jhipster-electron) 
-
-
+> A yeoman generator to run spring boot war app in electron package mapping the [generator-jhipster-electron](https://github.com/amanganiello90/generator-jhipster-electron). 
+You can use it to generate an electron exe that runs your target/*.war package in a generic spring-boot project.
 
 ## NEWS
 
@@ -25,7 +24,7 @@ npm install -g generator-electron-war-package
 
 ## Usage
 
-After installing, generate your new project:
+After installation, generate your new project:
 
 ```bash
 yo electron-war-package
@@ -34,7 +33,7 @@ yo electron-war-package
 It will be created a folder named **electron-war-package**. After installing dependencies you can run in this:
 
 * `npm start` : it runs the app in a live electron process
-* `npm package` : it creates an **electron-war 1.0.0.exe** app in **electron-war-package\distribution**
+* `npm package` : it creates an **electron-war 1.0.0.exe** app in **electron-war-package/distribution**
 
 For both, you can read the backend log into the electron window using **F1 keyword**:
 
@@ -67,4 +66,4 @@ For both, you can read the backend log into the electron window using **F1 keywo
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
