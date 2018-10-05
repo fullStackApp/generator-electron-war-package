@@ -1,0 +1,75 @@
+{
+	"name": "generator-electron-war-package",
+	"version": "2.0.0",
+	"description": "A yeoman generator to run spring boot war app in electron package",
+	"homepage": "",
+	"author": {
+		"name": "Angelo Manganiello",
+		"email": "angelo.mang@libero.it",
+		"url": "https://github.com/fullStackApp/generator-electron-war-package"
+	},
+	"files": [
+		"generators"
+	],
+	"main": "generators/index.js",
+	"keywords": [
+		"war",
+		"cli",
+		"electron",
+		"generator",
+		"yeoman",
+		"yeoman-generator"
+	],
+	"devDependencies": {
+		"yeoman-test": "1.7.0",
+		"yeoman-assert": "3.1.0",
+		"eslint": "4.1.0",
+		"prettier": "1.7.0",
+		"lint-staged": "4.2.1",
+		"eslint-config-prettier": "2.4.0",
+		"eslint-plugin-prettier": "2.2.0",
+		"eslint-config-xo": "0.18.2",
+		"jest": "22.0.6",
+		"jest-sonar-reporter": "1.3.0",
+		"typescript": "2.4.2",
+		"ts-jest": "22.0.4"
+	},
+	"dependencies": {
+		"chalk": "2.3.0",
+		"to-case": "2.0.0",
+		"yeoman-generator": "2.0.5",
+		"yosay": "2.0.1"
+	},
+	"jest": {
+		"testEnvironment": "node"
+	},
+	"scripts": {
+		"pretest": "eslint . --fix",
+		"test": "jest"
+	},
+	"lint-staged": {
+		"*.js": [
+			"eslint --fix",
+			"git add"
+		],
+		"*.json": [
+			"prettier --write"
+		]
+	},
+	"eslintConfig": {
+		"extends": [
+			"xo",
+			"prettier"
+		],
+		"env": {
+			"jest": true,
+			"node": true
+		},
+		"rules": {},
+		"plugins": [
+			"prettier"
+		]
+	},
+	"repository": "fullStackApp/generator-electron-war-package",
+	"license": "MIT"
+}

@@ -1,0 +1,56 @@
+{
+	"name": "war-exe-generator",
+	"description": "Spawning Jhipster war app in Electron and using it to serve content or create a standalone package",
+	"version": "1.0.0",
+	"main": "main.js",
+	"author": {
+		"name": "Angelo Manganiello",
+		"email": "angelo.mang@libero.it"
+	},
+	"license": "Apache-2.0",
+	"scripts": {
+		"delete": "del \"*.war\"",
+		"copy": "cpx  \"../target/*.war\"  .",
+		"preconfig": "npm run copy && npm run delete && npm run copy && rename *.war app.war ",
+		"start": "npm run preconfig && electron .",
+		"package": "npm run preconfig && build"
+	},
+	"build": {
+		"productName": "electron-war",
+		"asar": false,
+		"directories": {
+			"output": "distribution"
+		},
+		"win": {
+			"icon": "icon.png",
+			"target": [
+				"portable"
+			]
+		},
+		"mac": {
+			"icon": "icon.png",
+			"target": [
+				"dmg"
+			]
+		},
+		"linux": {
+			"icon": "icon.png",
+			"target": [
+				"AppImage"
+			]
+		}
+	},
+	"devDependencies": {
+		"cpx": "1.5.0",
+		"del-cli": "1.1.0",
+		"electron": "2.0.11",
+		"electron-builder": "20.15.1",
+		"rename-cli": "5.1.2"
+	},
+	"dependencies": {
+		"jquery": "3.3.1",
+		"keymaster": "1.6.2",
+		"lodash": "4.17.4",
+		"request": "2.83.0"
+	}
+}

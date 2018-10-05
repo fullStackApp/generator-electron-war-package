@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Angelo Manganiello",
+      "authorEmail": "angelo.mang@libero.it",
+      "authorUrl": "https://github.com/fullStackApp/"
+    }
+  }
+}

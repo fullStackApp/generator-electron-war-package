@@ -1,0 +1,9 @@
+.sonarlint
+.vscode
+.editorconfig
+.eslintignore
+.eslintrc.json
+.gitattributes
+.gitignore
+.travis.yml
+__tests__/
