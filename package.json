@@ -1,6 +1,6 @@
 {
 	"name": "generator-electron-war-package",
-	"version": "1.0.0",
+	"version": "1.1.0-SNAPSHOT",
 	"description": "A yeoman generator to run spring boot war app in electron package",
 	"homepage": "https://github.com/fullStackApp/generator-electron-war-package",
 	"author": {
