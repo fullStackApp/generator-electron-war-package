@@ -1,6 +1,7 @@
 const Generator = require('yeoman-generator')
 const chalk = require('chalk')
 const yosay = require('yosay')
+const fs= require('fs');
 const dir = 'electron-war-package';
 const path = require('path');
 let directory = '';
@@ -27,6 +28,14 @@ module.exports = class extends Generator {
       'README.md'
     ]
 
+    this.log(`Generating folder '${dir}'`);
+    if (!fs.existsSync(dir)) {
+      directory = path.join(process.cwd(), dir);
+      fs.mkdirSync(directory);
+    } else if(fs.existsSync(dir)) {
+      throw new Error(`the folder: ${dir} already exists. Please delete before it!`);
+    }
+
     directory = path.join(process.cwd(), dir);
     process.chdir(directory);
 
@@ -40,7 +49,7 @@ module.exports = class extends Generator {
   }
 
   install() {
-    this.npmInstall(this.props.packs.split(' '), {
+    this.npmInstall(('').split(' '), {
       'save': true
     });
     this.npmInstall().then(() => {
