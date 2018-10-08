@@ -3,7 +3,7 @@
 <img src="https://img.shields.io/github/stars/fullStackApp/generator-electron-war-package.svg">&nbsp;<a href="https://github.com/fullStackApp/generator-electron-war-package/issues"><img src="https://img.shields.io/github/issues/fullStackApp/generator-electron-war-package.svg">
 </a>&nbsp;
 
-## generator-electron-war-package [![Build Status](https://travis-ci.com/fullStackApp/generator-electron-war-package.svg)](https://travis-ci.com/fullStackApp/generator-electron-war-package)
+## generator-electron-war-package [![Build Status](https://travis-ci.org/fullStackApp/generator-electron-war-package.svg)](https://travis-ci.com/fullStackApp/generator-electron-war-package)
 
 > A yeoman generator to run spring boot war app in electron package mapping the [generator-jhipster-electron](https://github.com/amanganiello90/generator-jhipster-electron). 
 You can use it to generate an electron exe that runs your target/*.war package in a generic spring-boot project.
