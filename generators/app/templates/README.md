@@ -20,7 +20,7 @@ npm install
 After installing dependencies and generating **target/*.war** with spring-boot, you can run in this:
 
 * `npm start` : it runs the app in a live electron process
-* `npm package` : it creates an **electron-war 1.0.0.exe** app in **electron-war-package\distribution**
+* `npm package` : it creates an **electron-war 1.0.0.exe** app in **electron-war-package/distribution**
 
 For both, you can read the backend log into the electron window using **F1 keyword**.
 

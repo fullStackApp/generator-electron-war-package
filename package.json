@@ -1,12 +1,12 @@
 {
 	"name": "generator-electron-war-package",
-	"version": "2.0.0",
+	"version": "1.0.0",
 	"description": "A yeoman generator to run spring boot war app in electron package",
-	"homepage": "",
+	"homepage": "https://github.com/fullStackApp/generator-electron-war-package",
 	"author": {
 		"name": "Angelo Manganiello",
 		"email": "angelo.mang@libero.it",
-		"url": "https://github.com/fullStackApp/generator-electron-war-package"
+		"url": "https://github.com/amanganiello90"
 	},
 	"files": [
 		"generators"
